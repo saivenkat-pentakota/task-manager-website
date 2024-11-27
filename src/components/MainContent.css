@@ -1,0 +1,53 @@
+.main-content {
+    padding: 20px;
+  }
+  
+  .add-task-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .add-task-btn .icon {
+    margin-right: 5px;
+  }
+  
+  .tasks {
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .task-item .icon {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #6c757d;
+  }
+  
+  .task-right {
+    margin-top: 20px;
+  }
+  
+  .task-right .icon.success {
+    color: green;
+  }
+  
+  .task-right .icon.pending {
+    color: orange;
+  }
+  
+  .task-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
