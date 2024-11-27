@@ -1,6 +1,6 @@
 import React from "react";
-import { FaPlus, FaCheckCircle, FaInfoCircle } from "react-icons/fa"; // Import icons
-import "./MainContent.css"; // Add your custom styles
+import { FaPlus, FaCheckCircle, FaInfoCircle } from "react-icons/fa"; 
+import "./MainContent.css"; 
 
 const MainContent = ({ userName, tasks, completedTasks }) => {
   return (

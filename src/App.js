@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import MainContent from "./components/MainContent";
+// import Sidebar from "./components/Sidebar";
+// import MainContent from "./components/MainContent";
 import "./App.css";
 
 const App = () => {
@@ -9,8 +9,8 @@ const App = () => {
     <div className="app">
       <Navbar />
       <div className="layout">
-        <Sidebar />
-        <MainContent />
+        {/* <Sidebar /> */}
+        {/* <MainContent /> */}
       </div>
     </div>
   );
