@@ -1,34 +1,40 @@
 import React from "react";
-import { FaTachometerAlt, FaTasks, FaCogs, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa"; 
-import "./Sidebar.css"; 
+import { FaTasks, FaCogs, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa";
+import { IoMdSettings } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
+import "./Sidebar.css";
 
-const Sidebar = ({ user }) => {
+const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="user-profile">
         <img src="" alt="Profile" className="profile-img" />
-        <h3>{user.name}</h3>
-        <p>{user.email}</p>
+        <h3>Pentakota Saivenkat</h3>
+        <p>saivenkatpentakota@gmail.com</p>
       </div>
       <div className="menu">
         <div className="menu-item">
-          <FaTachometerAlt className="icon" />
+          <MdDashboard className="sidebar-icon" />
           <span>Dashboard</span>
         </div>
         <div className="menu-item">
-          <FaTasks className="icon" />
+          <FaTasks className="sidebar-icon" />
           <span>My Tasks</span>
         </div>
         <div className="menu-item">
-          <FaCogs className="icon" />
+          <FaCogs className="sidebar-icon" />
           <span>Task Categories</span>
         </div>
         <div className="menu-item">
-          <FaQuestionCircle className="icon" />
-          <span>Help</span>
+          <IoMdSettings className="sidebar-icon" />
+          <span>Settings</span>
         </div>
         <div className="menu-item">
-          <FaSignOutAlt className="icon" />
+          <FaQuestionCircle className="sidebar-icon" />
+          <span>Help</span>
+        </div>
+        <div className="menu-item logout">
+          <FaSignOutAlt className="sidebar-icon" />
           <span>Logout</span>
         </div>
       </div>

@@ -1,0 +1,146 @@
+    .task-modal {
+    max-width: 918px;
+    margin: 50px auto;
+    padding: 60px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #ff5722;
+  }
+  
+  .modal-header .go-back {
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    height: 200px;
+    resize: none;
+  }
+  
+  .priority-group {
+    flex: 1 1 100%;
+  }
+  
+  .priority-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .priority-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .extreme {
+    color: red;
+    font-weight: 200;
+  }
+  
+  .moderate {
+    color: blue;
+    font-weight: 200;
+  }
+  
+  .low {
+    color: green;
+    font-weight: 200;
+  }
+  
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    height: 220px;
+    text-align: center;
+  }
+  
+  .upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .uploadfile-img{
+    font-size: 2.5rem;
+  }
+  .upload-box .browse-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: gray;
+    font-weight: bold;
+    background-color: transparent !important;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    width: 120px !important;
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background: #e64a19;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .task-form {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      flex: 1 1 100%;
+    }
+  }
+  

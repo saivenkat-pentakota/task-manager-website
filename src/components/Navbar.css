@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 20px 50px;
     background-color: #F8F8F8;
+    overflow: none;
   }
   
   .logo {

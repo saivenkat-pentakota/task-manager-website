@@ -35,8 +35,8 @@ const Navbar = () => {
       <div className="navbar-icons">
         <FaBell className="icon" title="Notifications" />
         <FaUserCircle className="icon" title="Profile" />
-        <FaRegCalendarAlt className="icon" title="Profile" />
-        <div className="date-time">
+        <FaRegCalendarAlt className="icon" title="Profile"  />
+        <div className="date-time" >
           <div className="date">{formattedDate}</div>
           <div className="time">{formattedTime}</div>
         </div>

@@ -1,14 +1,17 @@
-
-
 .sidebar {
-  width: 250px;
-  height: 100vh;
-  background: #343a40;
+  width: 280px; 
+  height: 100vh; 
+  background: #000000; 
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  margin-top: 100px;
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  border-top-right-radius:10px;
+  padding-top: 80px;
 }
 
 .user-profile {
@@ -21,6 +24,7 @@
   height: 80px;
   border-radius: 50%;
   margin-bottom: 10px;
+  background-color: #495057;
 }
 
 .menu {
@@ -30,16 +34,20 @@
 .menu-item {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 40px;
+  margin: 0 15px 0 15px;
+
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .menu-item:hover {
-  background: #495057;
+  background: #FFFFFF;
+  color: #FF6767;
+  border-radius:20px ;
 }
 
-.menu-item .icon {
+.menu-item .sidebar-icon {
   font-size: 1.2rem;
   margin-right: 15px;
 }
+
