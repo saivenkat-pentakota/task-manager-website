@@ -1,8 +1,82 @@
-.main-content {
-    padding-left: 320px;
-  }
-  
-  
+
+.dashboard {
+margin-left: 300px;
+margin-top: 100px;
+}
+
+.task-dashboard {
+  margin-right: 120px;
+  display: flex;
+  gap: 20px;
+}
+
+
+.left-dashboard {
+  flex: 2;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-dashboard-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-dashboard-header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.left-dashboard-header h3 {
+  font-size: 16px;
+  color: #FF6767;
+  margin-bottom: 10px;
+}
+
+.addtask-btn{
+  width: 120px;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  color: #A1A3AB;
+}
+
+
+.addtask-btn:hover{
+  background:transparent;
+}
+
+.Faplus{
+  font-size: 1rem;
+  color: #FF6767;
+}
+.right-dashboard {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.task-status,
+.task-completed {
+  flex: 1;
+  background-color: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
   
   
   

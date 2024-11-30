@@ -1,15 +1,17 @@
 import React from "react";
-import { FaTasks, FaCogs, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa";
+import { FaTasks, FaQuestionCircle, FaSignOutAlt} from "react-icons/fa"; 
+import { BiTask } from "react-icons/bi";
+
 import { IoMdSettings } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
-import "./Sidebar.css";
+import "./Sidebar.css"; 
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="user-profile">
         <img src="" alt="Profile" className="profile-img" />
-        <h3>Pentakota Saivenkat</h3>
+        <h3>pentakota Saivenkat</h3>
         <p>saivenkatpentakota@gmail.com</p>
       </div>
       <div className="menu">
@@ -18,11 +20,11 @@ const Sidebar = () => {
           <span>Dashboard</span>
         </div>
         <div className="menu-item">
-          <FaTasks className="sidebar-icon" />
+          <BiTask className="sidebar-icon" />
           <span>My Tasks</span>
         </div>
         <div className="menu-item">
-          <FaCogs className="sidebar-icon" />
+          <FaTasks className="sidebar-icon" />
           <span>Task Categories</span>
         </div>
         <div className="menu-item">
@@ -34,7 +36,7 @@ const Sidebar = () => {
           <span>Help</span>
         </div>
         <div className="menu-item logout">
-          <FaSignOutAlt className="sidebar-icon" />
+          <FaSignOutAlt className="sidebar-icon " />
           <span>Logout</span>
         </div>
       </div>

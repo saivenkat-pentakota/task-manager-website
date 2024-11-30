@@ -1,71 +1,145 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #F8F8F8;
-    overflow: none;
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input {
-    padding: 10px;
-    border-style: none;
-    padding-right: 35px;
-    font-size: 14px;
-    width: 800px;
-    background-color: #FFFFFF;
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 0px;
-    color: #ffff;
-    background-color: #FF6767;
-    font-size: 20px;
-    padding: 5px;
-    border: 1px solid ;
-    border-radius: 10px;
-  }
-  
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .icon {
-    font-size: 20px;
-    padding: 5px;
-    border: 1px solid ;
-    border-radius: 10px;
-    cursor: pointer;
-    color: #ffff;
-    background-color: #FF6767;
-  }
-  
-  .date-time {
-    text-align: center;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .date {
-    font-weight: bold;
-  }
-  
-  .time {
-    font-size: 12px;
-    color: #3ABEFF;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f8f8;
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
+  z-index: 1000;
+
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  padding-right: 35px;
+  font-size: 14px;
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: #ff6767;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ff6767;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #ff4d4d;
+}
+
+.date-time {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.time {
+  font-size: 12px;
+  color: #3abeff;
+}
+
+/* Calendar Styles */
+.calendar-container {
+  position: relative;
+}
+
+.calendar-popup {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 10px;
+}
+
+/* Calendar Customization */
+.react-calendar {
+  border: none;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.react-calendar__tile {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px; /* Ensure numbers are visible */
+  color: #333;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.react-calendar__tile--active {
+  background-color: #ff6767;
+  color: #ffffff;
+}
+
+.react-calendar__tile:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+}
+
+.react-calendar__navigation {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.react-calendar__navigation button {
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #ff6767;
+  color: #ffffff;
+}

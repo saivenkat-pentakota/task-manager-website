@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "react-calendar/dist/Calendar.css";
 import Navbar from "./components/Navbar";
 import Dashboard from './components/Dashboard';
 import Register from "./components/pages/Register";
