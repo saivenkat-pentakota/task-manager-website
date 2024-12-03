@@ -9,21 +9,25 @@ import "./App.css";
 import Sidebar from "./components/Sidebar";
 import AddTask from "./components/Tasks/AddTask";
 import EditTask from "./components/Tasks/EditTask";
+import Profile from "./components/profile/Profile";
+import MyTasks from "./components/Tasks/MyTasks";
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <Navbar />
-        <Dashboard/>
         <div className="layout">
           <Routes>
+            <Route path="/" element={<Dashboard />} />
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
-            <Route path = "/addtask"element = {<AddTask/>}/>
-            <Route path = "/edittask"element = {<EditTask/>}/>
+            <Route path="/addtask" element={<AddTask />} />
+            <Route path="/edittask" element={<EditTask />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/mytasks" element={<MyTasks />} />
           </Routes>
-          <Sidebar/>
+          <Sidebar />
         </div>
       </div>
     </Router>
